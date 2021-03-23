@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+html,
 body {
   height: 100%;
   background-image: url("../images/background.jpg");
@@ -16,11 +17,25 @@ header {
   justify-content: space-between;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
 .btn {
-  background-color: blue;
-  color: white;
   padding: 0.5rem 1rem;
   margin: 0.25rem;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-warning {
+  background-color: #CFB53B;
 }
 
 .logo {
