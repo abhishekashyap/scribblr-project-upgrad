@@ -6,7 +6,13 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <script src="scripts/modal.js" defer></script>
   </head>
 
   <body>
@@ -16,14 +22,100 @@
         <h4 class="logo-subtitle">Explore, Imagine, Create</h4>
       </div>
       <div class="btn-container">
-        <button class="btn btn-primary">Sign In</button>
-        <button class="btn btn-primary">Sign Up</button>
+        <button id="signin" class="btn btn-primary">Sign In</button>
+        <button id="signup" class="btn btn-primary">Sign Up</button>
       </div>
     </header>
     <main>
       <div>
         <button class="btn btn-warning">All Posts</button>
         <button class="btn btn-warning">Create Post</button>
+      </div>
+      <!-- MODALS -->
+
+      <!-- Sign up modal -->
+      <div id="signup-modal" class="modal">
+        <div class="modal-content">
+          <h3 class="modal-title">Get Started</h3>
+          <span class="close">&times;</span>
+          <hr class="line" />
+          <form action="#">
+            <div class="form-item">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter Full Name"
+              />
+            </div>
+            <div class="form-item">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter Username"
+              />
+            </div>
+            <div class="form-item">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="form-item">
+              <label for="confirmpassword">Confirm Password</label>
+              <input
+                type="password"
+                name="confirmpassword"
+                id="confirmpassword"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <div class="form-item">
+              <button type="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Sign in modal -->
+      <div id="signin-modal" class="modal">
+        <div class="modal-content">
+          <h3 class="modal-title">Welcome Back!</h3>
+          <span class="close">&times;</span>
+          <hr class="line" />
+          <form action="#">
+            <div class="form-item">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter Username"
+              />
+            </div>
+            <div class="form-item">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="form-item">
+              <button type="submit">Sign In</button>
+            </div>
+            <div class="form-item">
+              <p>Not a member? <a id="sign-up-switch" href="#">Sign up</a></p>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
   </body>
