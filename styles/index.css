@@ -13,46 +13,11 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-}
-
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50%;
-}
-
-button {
-  cursor: pointer;
-}
-
-.btn {
-  padding: 0.5rem 1rem;
-  margin: 0.25rem;
-}
-
-.btn-primary {
-  background-color: blue;
-  color: white;
-}
-
-.btn-warning {
-  background-color: #cfb53b;
-}
-
-.logo {
-  font-family: "Dancing Script", cursive;
-  letter-spacing: 0.1rem;
-  margin: 0.25rem;
-}
-
-.logo-title {
-  color: blue;
-  font-size: 3rem;
-  margin-bottom: 0.25rem;
 }
 
 .modal-title {
