@@ -28,8 +28,10 @@
     </header>
     <main>
       <div>
-        <button class="btn btn-warning">All Posts</button>
-        <button class="btn btn-warning">Create Post</button>
+        <a href="/bloglist.html"
+          ><button class="btn btn-warning">All Posts</button></a
+        >
+        <button id="create-post" class="btn btn-warning">Create Post</button>
       </div>
       <!-- MODALS -->
 
@@ -113,6 +115,28 @@
             </div>
             <div class="form-item">
               <p>Not a member? <a id="sign-up-switch" href="#">Sign up</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="create-post-modal" class="modal">
+        <div class="modal-content">
+          <h3 class="modal-title">Pen Your Post</h3>
+          <span class="close">&times;</span>
+          <form action="#">
+            <div class="form-item">
+              <label for="title">Title:</label>
+              <input type="text" name="title" id="title" />
+            </div>
+            <div class="form-item">
+              <label for="content">Content:</label>
+              <textarea name="content" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-item">
+              <div>
+                <button id="create" type="submit">Create</button>
+              </div>
             </div>
           </form>
         </div>
