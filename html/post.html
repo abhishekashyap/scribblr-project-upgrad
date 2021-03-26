@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <link rel="stylesheet" href="../styles/post.css" />
+    <script src="../scripts/utils.js" defer></script>
+    <script src="../scripts/header.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo-title">ScriBBler</h1>
+        <h4 class="logo-subtitle">Explore, Imagine, Create</h4>
+      </div>
+      <div class="btn-container">
+        <button id="signin" class="btn btn-primary">Sign In</button>
+        <button id="signup" class="btn btn-primary">Sign Up</button>
+      </div>
+    </header>
+    <main>
+      <div class="blog-post">
+        <div class="post-title">
+          <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+        </div>
+        <div class="post-subtitle">
+          <div class="post-author">
+            <p>Srishti Gupta</p>
+          </div>
+          <div>
+            <button class="btn">Edit&nbsp;<i class="fa fa-edit"></i></button>
+          </div>
+        </div>
+        <div class="post-content">
+          <p>
+            Since JavaScript does not have any type-checking, either of these
+            keywords can be used to declare a variable of any type (datatype) in
+            JavaScript. Though all the three keywords are used for the same
+            purpose, they are different. Mollit quis sunt pariatur quis nulla
+            magna magna in cillum. Sunt cupidatat incididunt sunt ea labore
+            eiusmod reprehenderit nostrud ex cillum ex. Sit nostrud consequat
+            voluptate dolor voluptate nisi excepteur esse cillum officia. Nisi
+            anim nisi commodo fugiat Lorem mollit. Culpa eu fugiat deserunt
+            mollit nostrud et exercitation qui ea consequat ex cillum
+            exercitation amet. Ea duis nisi Lorem enim ea ad.Exercitation
+            consequat veniam velit quis do in. Eu in reprehenderit aliqua
+            incididunt veniam Lorem. Adipisicing Lorem magna est tempor deserunt
+            sint sit proident ut cupidatat excepteur consectetur eiusmod irure.
+            Non deserunt elit culpa officia mollit Lorem et magna in. Esse
+            fugiat laborum eiusmod commodo minim. Amet reprehenderit laboris
+            cillum veniam est labore enim proident exercitation non nisi magna.
+            Do exercitation ea officia pariatur cupidatat enim irure in. Et
+            tempor fugiat anim ad velit anim excepteur excepteur quis. Eiusmod
+            voluptate officia ut nostrud eiusmod exercitation proident aliquip
+            in sit nisi in. Ut magna cillum nulla qui in eiusmod incididunt elit
+            sint pariatur. Excepteur esse exercitation culpa mollit. Adipisicing
+            esse do ut do irure irure. Pariatur cupidatat voluptate cillum elit
+            veniam labore deserunt adipisicing eiusmod mollit dolore.
+          </p>
+        </div>
+        <div class="like-btn-container">
+          <div>
+            <button class="btn">
+              <i class="fa fa-thumbs-up"></i>&nbsp;Like
+            </button>
+          </div>
+          <span>Be the first one to like this!</span>
+        </div>
+        <div class="add-comment-section">
+          <div class="add-comment-textarea">
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Leave a comment..."
+            ></textarea>
+          </div>
+          <div class="add-comment-btn-container">
+            <button class="btn">Comment</button>
+          </div>
+        </div>
+        <div class="all-comments">
+          <h5>All Comments</h5>
+          <div class="comments-list">
+            <div class="comment">First comment</div>
+            <div class="comment">Second comment</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODALS -->
+
+      <!-- Sign up modal -->
+      <div id="signup-modal" class="modal">
+        <div class="modal-content">
+          <h3 class="modal-title">Get Started</h3>
+          <span class="close">&times;</span>
+          <hr class="line" />
+          <form action="#">
+            <div class="form-item">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter Full Name"
+              />
+            </div>
+            <div class="form-item">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter Username"
+              />
+            </div>
+            <div class="form-item">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="form-item">
+              <label for="confirmpassword">Confirm Password</label>
+              <input
+                type="password"
+                name="confirmpassword"
+                id="confirmpassword"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <div class="form-item">
+              <button type="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Sign in modal -->
+      <div id="signin-modal" class="modal">
+        <div class="modal-content">
+          <h3 class="modal-title">Welcome Back!</h3>
+          <span class="close">&times;</span>
+          <hr class="line" />
+          <form action="#">
+            <div class="form-item">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter Username"
+              />
+            </div>
+            <div class="form-item">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="form-item">
+              <button type="submit">Sign In</button>
+            </div>
+            <div class="form-item">
+              <p>Not a member? <a id="sign-up-switch" href="#">Sign up</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

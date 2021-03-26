@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+.blog-post button {
+  border: none;
+  background-color: #ef3b65;
+  color: white;
+  box-shadow: 0px 10px 15px rgba(187, 43, 127, 0.4);
+}
+
+.blog-post {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.post-subtitle {
+  font-size: 1.25rem;
+  margin: 1.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-author {
+  font-family: "Dancing Script", cursive;
+}
+
+.post-content {
+  font-family: "Roboto Mono", monospace;
+}
+
+.like-btn-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0rem;
+}
+
+.like-btn-container span {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.add-comment-section {
+  margin: 1rem 0rem;
+}
+
+.add-comment-textarea textarea {
+  display: flex;
+  width: 60%;
+}
+
+.add-comment-btn-container {
+  margin: 0.5rem 0rem;
+}
+
+.all-comments {
+  margin-top: 2rem;
+}
+
+.all-comments h5 {
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.comments-list {
+  margin-top: 1rem;
+  background-color: #e2e4e6;
+  padding: 1rem;
+}
+
+.comment {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
