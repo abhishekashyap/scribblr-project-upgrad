@@ -31,7 +31,9 @@
     <main>
       <div class="blog-post">
         <div class="post-title">
-          <span id="post-title-data">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</span>
+          <span id="post-title-data"
+            >‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</span
+          >
         </div>
         <div class="post-subtitle">
           <div class="post-author">
@@ -75,11 +77,12 @@
         </div>
         <div class="like-btn-container">
           <div>
-            <button class="btn">
-              <i class="fa fa-thumbs-up"></i>&nbsp;Like
+            <button id="like-btn" class="btn">
+              <i class="fa fa-thumbs-up"></i>&nbsp;
+              <span id="like-btn-text">Like</span>
             </button>
           </div>
-          <span>Be the first one to like this!</span>
+          <span id="like-btn-helper-text">Be the first one to like this!</span>
         </div>
         <div class="add-comment-section">
           <div class="add-comment-textarea">
@@ -92,12 +95,12 @@
             ></textarea>
           </div>
           <div class="add-comment-btn-container">
-            <button class="btn">Comment</button>
+            <button id="comment-btn" class="btn">Comment</button>
           </div>
         </div>
         <div class="all-comments">
           <h5>All Comments</h5>
-          <div class="comments-list">
+          <div id="comment-list" class="comments-list">
             <div class="comment">First comment</div>
             <div class="comment">Second comment</div>
           </div>

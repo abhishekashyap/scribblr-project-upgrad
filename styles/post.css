@@ -69,6 +69,8 @@
 }
 
 .comments-list {
+  display: flex;
+  flex-direction: column-reverse;
   margin-top: 1rem;
   background-color: #e2e4e6;
   padding: 1rem;
