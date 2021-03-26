@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+body {
+  background-color: orange;
+}
+
+.logo-subtitle {
+  color: white;
+}
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.post-container {
+  display: flex;
+  width: 30%;
+  margin: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+}
+
+.post-content {
+  position: relative;
+  background-color: #e8e8e8;
+  padding: 1rem;
+}
+
+.post-header {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.post-header p {
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.5rem;
+}
+
+.trash-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.ellipsis-icon {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

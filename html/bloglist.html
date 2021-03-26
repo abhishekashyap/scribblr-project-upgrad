@@ -1,12 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog List</title>
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <link rel="stylesheet" href="../styles/bloglist.css" />
+    <script src="../scripts/utils.js" defer></script>
+    <script src="../scripts/header.js" defer></script>
+    <script src="../scripts/bloglist.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo-title">ScriBBler</h1>
+        <h4 class="logo-subtitle">Explore, Imagine, Create</h4>
+      </div>
+      <div class="btn-container">
+        <button id="signin" class="btn btn-primary">Sign In</button>
+        <button id="signup" class="btn btn-primary">Sign Up</button>
+      </div>
+    </header>
+    <main>
+      <!-- list of all posts starts here -->
+      <div class="posts-container">
+        <!-- post 1 starts here -->
+        <div class="post-container">
+          <div class="post-author">
+            <p>Srishti Gupta</p>
+          </div>
+
+          <div class="post-content">
+            <div class="post-header">
+              <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+              <span class="trash-icon">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </span>
+            </div>
+            <p>
+              Since JavaScript does not have any type-checking, either of these
+              keywords can be used to declare a variable of any type (datatype)
+              in JavaScript. Though all the three keywords are used for the same
+              purpose, they are different.
+            </p>
+            <span class="ellipsis-icon">
+              <i class="fa fa-ellipsis-h"></i>
+            </span>
+          </div>
+        </div>
+        <!-- post 1 ends here -->
+
+        <!-- post 2 starts here -->
+        <div class="post-container">
+          <div class="post-author">
+            <p>Colby Fayock</p>
+          </div>
+
+          <div class="post-content">
+            <div class="post-header">
+              <p>What is linting and how can it save you time?</p>
+              <span class="trash-icon">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </span>
+            </div>
+            <p>
+              One of the biggest challenges in software development is time.
+              It’s something we can’t easily get more of, but linting can help
+              us make the most out of the time we have.
+            </p>
+            <span class="ellipsis-icon">
+              <i class="fa fa-ellipsis-h"></i>
+            </span>
+          </div>
+        </div>
+        <!-- post 2 ends here -->
+
+        <!-- post 3 starts here -->
+        <div class="post-container">
+          <div class="post-author">
+            <p>Yazeed Bzadough</p>
+          </div>
+
+          <div class="post-content">
+            <div class="post-header">
+              <p>How to Get More Views on Your Tech Blog</p>
+              <span class="trash-icon">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </span>
+            </div>
+            <p>
+              If you're a developer with a Twitter account, you've already seen
+              everyone and their cat start a blog, YouTube channel, or Patreon.
+              We all want to become stars, or at the very least, a recognizable
+              name in the industry.
+            </p>
+            <span class="ellipsis-icon">
+              <i class="fa fa-ellipsis-h"></i>
+            </span>
+          </div>
+        </div>
+        <!-- post 3 ends here -->
+
+        <!-- post 4 starts here -->
+        <div class="post-container">
+          <div class="post-author">
+            <p>Cedd Burge</p>
+          </div>
+
+          <div class="post-content">
+            <div class="post-header">
+              <p>How to write easily describable code</p>
+              <span class="trash-icon">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </span>
+            </div>
+            <p>
+              When code is not describable using words, most people have to do
+              some mental mapping to turn it in to words. This wastes mental
+              energy, and you run the risk of getting the mapping wrong.
+              Different people will map to different words, which leads to
+              confusion when discussing the code.
+            </p>
+            <span class="ellipsis-icon">
+              <i class="fa fa-ellipsis-h"></i>
+            </span>
+          </div>
+        </div>
+        <!-- post 4 ends here -->
+
+        <!-- post 5 starts here -->
+        <div class="post-container">
+          <div class="post-author">
+            <p>Srishti Gupta</p>
+          </div>
+
+          <div class="post-content">
+            <div class="post-header">
+              <p>
+                Everything you should know about ‘module’ & ‘require’ in Node.js
+              </p>
+              <span class="trash-icon">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </span>
+            </div>
+            <p>
+              Node.js treats each JavaScript file as a separate module. For
+              instance, if you have a file containing some code and this file is
+              named xyz.js, then this file is treated as a module in Node, and
+              you can say that you’ve created a module named xyz.
+            </p>
+            <span class="ellipsis-icon">
+              <i class="fa fa-ellipsis-h"></i>
+            </span>
+          </div>
+        </div>
+        <!-- post 5 ends here -->
+
+        <!-- TODO: Write code for delete post modal here -->
+      </div>
+      <!-- list of all posts ends here -->
+
+      <!-- MODALS -->
+
+      <!-- Sign up modal -->
+      <div id="signup-modal" class="modal">
+        <div class="modal-content">
+          <h3 class="modal-title">Get Started</h3>
+          <span class="close">&times;</span>
+          <hr class="line" />
+          <form action="#">
+            <div class="form-item">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter Full Name"
+              />
+            </div>
+            <div class="form-item">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter Username"
+              />
+            </div>
+            <div class="form-item">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="form-item">
+              <label for="confirmpassword">Confirm Password</label>
+              <input
+                type="password"
+                name="confirmpassword"
+                id="confirmpassword"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <div class="form-item">
+              <button type="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Sign in modal -->
+      <div id="signin-modal" class="modal">
+        <div class="modal-content">
+          <h3 class="modal-title">Welcome Back!</h3>
+          <span class="close">&times;</span>
+          <hr class="line" />
+          <form action="#">
+            <div class="form-item">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter Username"
+              />
+            </div>
+            <div class="form-item">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="form-item">
+              <button type="submit">Sign In</button>
+            </div>
+            <div class="form-item">
+              <p>Not a member? <a id="sign-up-switch" href="#">Sign up</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Delete post modal -->
+      <div id="signin-modal" class="modal">
+        <div class="modal-content">
+          <h3 class="modal-title">
+            Are you sure you want to delete this post?
+          </h3>
+          <div class="btn-container">
+            <button class="btn">Yes</button>
+            <button class="btn">No</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

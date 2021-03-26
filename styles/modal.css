@@ -35,3 +35,53 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.modal-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.line {
+  margin: 2rem 0rem;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0rem;
+}
+
+.form-item label {
+  margin-bottom: 0.5rem;
+}
+
+.form-item input,
+textarea {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.form-item button {
+  border: none;
+  background-color: #5eb762;
+  padding: 1rem;
+  color: white;
+}
+
+.form-item p {
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
+.form-item a {
+  text-decoration: none;
+}
+
+.form-item div {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
