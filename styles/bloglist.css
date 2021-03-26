@@ -61,4 +61,30 @@ body {
   right: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
+  color: black;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+}
+
+.delete-btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.delete-btn-container button {
+  width: 30%;
+  color: white;
+  padding: 1rem;
+  border: none;
+}
+
+.btn-success {
+  background-color: #5eb762;
+}
+
+.btn-danger {
+  background-color: #f5564b;
 }
