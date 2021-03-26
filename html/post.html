@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../styles/post.css" />
     <script src="../scripts/utils.js" defer></script>
     <script src="../scripts/header.js" defer></script>
+    <script src="../scripts/post.js" defer></script>
   </head>
   <body>
     <header>
@@ -30,18 +31,23 @@
     <main>
       <div class="blog-post">
         <div class="post-title">
-          <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+          <span id="post-title-data">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</span>
         </div>
         <div class="post-subtitle">
           <div class="post-author">
             <p>Srishti Gupta</p>
           </div>
           <div>
-            <button class="btn">Edit&nbsp;<i class="fa fa-edit"></i></button>
+            <button id="edit-btn" class="btn">
+              Edit&nbsp;<i class="fa fa-edit"></i>
+            </button>
+            <button id="save-btn" class="btn">
+              Save&nbsp;<i class="fa fa-save"></i>
+            </button>
           </div>
         </div>
         <div class="post-content">
-          <p>
+          <p id="post-content-data">
             Since JavaScript does not have any type-checking, either of these
             keywords can be used to declare a variable of any type (datatype) in
             JavaScript. Though all the three keywords are used for the same

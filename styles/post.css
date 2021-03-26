@@ -79,3 +79,15 @@
   padding: 1rem;
   background-color: white;
 }
+
+.border-pink {
+  border: 1px solid #ef3b65;
+}
+
+.border-blue {
+  border: 1px solid blue;
+}
+
+#save-btn {
+  display: none;
+}
