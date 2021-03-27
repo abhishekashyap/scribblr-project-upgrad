@@ -31,11 +31,17 @@ saveBtn.addEventListener("click", function saveBtnHandler() {
   editBtn.style.display = "block";
 });
 
+let likeCount = 0;
 likeBtn.addEventListener("click", function likeBtnHandler() {
   const likeBtnText = document.getElementById("like-btn-text");
   const likeBtnHelperText = document.getElementById("like-btn-helper-text");
-  likeBtnText.innerText = "Liked!";
-  likeBtnHelperText.innerText = "1 person likes this!";
+  likeCount++;
+  if (likeCount === 1) {
+    likeBtnText.innerText = "Liked!";
+    likeBtnHelperText.innerText = `${likeCount} person likes this!`;
+  } else {
+    likeBtnHelperText.innerText = `${likeCount} people have liked this!`;
+  }
 });
 
 commentBtn.addEventListener("click", function commentHandler() {
