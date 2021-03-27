@@ -32,14 +32,11 @@ closeSignInModalBtn.onclick = function () {
 };
 
 // Handle outside modal click
-window.onclick = function (event) {
+window.addEventListener("click", function headerFunctionsHandlerevent(event) {
   if (event.target == signUpModal) {
     closeModal(signUpModal);
   }
   if (event.target == signInModal) {
     closeModal(signInModal);
   }
-  if (event.target == createPostModal) {
-    closeModal(createPostModal);
-  }
-};
+});
