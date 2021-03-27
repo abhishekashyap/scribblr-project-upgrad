@@ -39,4 +39,7 @@ window.onclick = function (event) {
   if (event.target == signInModal) {
     closeModal(signInModal);
   }
+  if (event.target == createPostModal) {
+    closeModal(createPostModal);
+  }
 };

@@ -10,9 +10,3 @@ closeCreatePostModalBtn.onclick = function () {
   closeModal(createPostModal);
 };
 
-// Handle outside modal click
-window.onclick = function (event) {
-  if (event.target == createPostModal) {
-    closeModal(createPostModal);
-  }
-};
