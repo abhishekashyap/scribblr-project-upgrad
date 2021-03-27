@@ -9,27 +9,33 @@ const signUpSwitchBtn = document.getElementById("sign-up-switch");
 const closeSignUpModalBtn = document.getElementsByClassName("close")[0];
 const closeSignInModalBtn = document.getElementsByClassName("close")[1];
 
-signInBtn.onclick = function () {
+signInBtn.addEventListener("click", function signInBtnHandler() {
   openModal(signInModal);
-};
+});
 
-signUpBtn.onclick = function () {
+signUpBtn.addEventListener("click", function signUpBtnHandler() {
   openModal(signUpModal);
-};
+});
 
-signUpSwitchBtn.onclick = function () {
+signUpSwitchBtn.addEventListener("click", function signUpSwitchBtnHandler() {
   closeModal(signInModal);
   openModal(signUpModal);
-};
+});
 
 // X btn to close the modal
-closeSignUpModalBtn.onclick = function () {
-  closeModal(signUpModal);
-};
+closeSignUpModalBtn.addEventListener(
+  "click",
+  function closeSignUpModalHandler() {
+    closeModal(signUpModal);
+  }
+);
 
-closeSignInModalBtn.onclick = function () {
-  closeModal(signInModal);
-};
+closeSignInModalBtn.addEventListener(
+  "click",
+  function closeSignInModalHandler() {
+    closeModal(signInModal);
+  }
+);
 
 // Handle outside modal click
 window.addEventListener("click", function headerFunctionsHandlerevent(event) {
