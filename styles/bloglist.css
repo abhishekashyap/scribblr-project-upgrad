@@ -17,7 +17,7 @@ body {
 
 .post-container {
   display: flex;
-  width: 30%;
+  flex-basis: 40%; /* Two items per row  */
   margin: 1.5rem;
   border-radius: 10px;
   overflow: hidden;
@@ -45,6 +45,10 @@ body {
 .post-header p {
   font-family: "Patrick Hand", cursive;
   font-size: 1.5rem;
+}
+
+.post-content p {
+  text-overflow: ellipsis;
 }
 
 .trash-icon {
