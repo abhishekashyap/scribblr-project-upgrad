@@ -50,6 +50,7 @@ body {
 .post-content p {
   overflow: hidden;
   text-overflow: ellipsis;
+  max-height: 3.75rem;
 }
 
 .trash-icon {
